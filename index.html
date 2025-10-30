@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="portyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio.</a>
+        <ul>
+            <li class="active"><a href="#" id="homeLink">Home</a></li>
+            <li><a href="#" id="aboutLink">About</a></li>
+            <li><a href="#" id="ContactLink">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+       <div class="bar" style="--i:6;"></div>
+       <div class="bar" style="--i:5;"></div>
+       <div class="bar" style="--i:4;"></div>
+       <div class="bar" style="--i:3;"></div>
+       <div class="bar" style="--i:2;"></div>
+       <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <section class="home">
+        <div class="home-info">
+            <h1>Omanboyev Kamoladdin</h1>
+            <h2>I'm a 
+                <span style="--i:4;" data-text="Web developer">Web developer</span>
+                <span style="--i:3;" data-text="Mobile app developer">Mobile app developer</span>
+                <span style="--i:2;" data-text="Designer">Designer</span>
+                <span style="--i:1;" data-text="Freelancer">Freelancer</span>
+            </h2>
+            <p> tajribali dasturchi va freelancer sifatida Android Studio, veb-dasturlash, Play Console va Upwork yo‘nalishlarida ishlayman. Mijozlarga sifatli veb va mobil ilovalar yaratishda yordam beraman. "Sertifikat emas, natija yaratamiz!"  bu mening shiorim.</p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Download CV</a>
+                <a href="#" class="btn" id="Back" style="margin-top: 150px; margin-left: -150px;">Go Back</a>
+                <div class="sci" style="margin-left: 30px;">
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    <a href="#"><i class="bx bxl-upwork"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="home.png" alt="">
+                </div>
+            </div>
+        </div>
+       
+          
+    </section>
+
+    <script>
+        // "About" tugmasini bosganda about.html ga o'tish
+        document.getElementById('aboutLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Sahifaning qayta yuklanishiga yo'l qo'ymaslik
+            window.location.href = 'about.html'; // about.html sahifasiga o'tish
+        });
+        document.getElementById('ContactLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Sahifaning qayta yuklanishiga yo'l qo'ymaslik
+            window.location.href = 'porpor.html'; // about.html sahifasiga o'tish
+        });
+        document.getElementById('Back').addEventListener('click', function(event) {
+            event.preventDefault(); // Sahifaning qayta yuklanishiga yo'l qo'ymaslik
+            window.location.href = 'asosiy.html'; // about.html sahifasiga o'tish
+        });
+    </script>
+</body>
+</html>
